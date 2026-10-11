@@ -46,9 +46,9 @@ ul.ben span{font-size:14px;line-height:1.5;color:var(--mut)}
 .app a{color:var(--acc);font:700 12px Orbitron,sans-serif;letter-spacing:2px;text-decoration:none;border:1px solid var(--acc);padding:11px 16px;border-radius:10px;white-space:nowrap}
 .cta2{margin:26px 0 0;text-align:center;padding:28px 18px;border-radius:16px;border:1px solid var(--line);background:var(--card)}
 .cta2 h2{font-family:Michroma,sans-serif;font-weight:400;font-size:18px;color:#fff;line-height:1.4}
-.cta2 form{max-width:520px;margin:18px auto 0}
-.bh-form{width:100%;max-width:520px;margin:22px auto 0;display:flex;justify-content:center;align-items:center}
-.bh-form iframe{width:100%!important;max-width:100%;border:0}
+.cta2 form{max-width:560px;margin:18px auto 0}
+.bh-form{width:100%;max-width:560px;margin:22px 0 0;overflow:hidden;position:relative;height:70px}
+.bh-form iframe{position:absolute;top:0;left:0;width:560px!important;max-width:none!important;height:207px!important;border:0;transform-origin:0 0}
 .cta2 .bh-form{margin:18px auto 0}
 footer{padding:30px 0 40px;text-align:center;font-size:12px;color:#6c778a;line-height:1.7}
 footer .brand{font-size:11px;display:block;margin-bottom:6px}
@@ -90,5 +90,7 @@ footer .brand{font-size:11px;display:block;margin-bottom:6px}
 <div class="app"><div><div class="t">Kitchen Sink app</div><p>Live headlines all day, between issues.</p></div><a href="https://brave-acorn-blue-birch.grok.me/">OPEN THE APP &rarr;</a></div>
 <div class="cta2"><h2>Get tomorrow's issue in your inbox.</h2><div class="bh-form"><script async src="https://subscribe-forms.beehiiv.com/v3/loader.js" data-beehiiv-form="1c855fd2-9642-4d1d-8e13-aa622c4295b5"></script></div></div>
 <footer><span class="brand">KITCHEN <b style="color:var(--acc)">SINK</b></span>Independent fan newsletter. Not affiliated with Tesla, SpaceX or xAI.<br>Nothing here is investment advice.</footer>
-</div><script type="text/javascript" async src="https://subscribe-forms.beehiiv.com/attribution.js"></script>
+</div><script>
+(function(){function fit(){document.querySelectorAll(".bh-form").forEach(function(el){var w=el.clientWidth;if(!w)return;var s=w/400;var o=-80*s;el.style.height=Math.ceil(50*s)+"px";var f=el.querySelector("iframe");if(f){f.style.width="560px";f.style.maxWidth="none";f.style.height="207px";f.style.transformOrigin="0 0";f.style.transform="matrix("+s+",0,0,"+s+","+o+","+o+")";}});}window.addEventListener("resize",fit);var obs=new MutationObserver(fit);document.querySelectorAll(".bh-form").forEach(function(el){obs.observe(el,{childList:true,subtree:true});});fit();[300,1000,2500].forEach(function(t){setTimeout(fit,t);});})();
+</script><script type="text/javascript" async src="https://subscribe-forms.beehiiv.com/attribution.js"></script>
 </body></html>
