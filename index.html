@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Kitchen Sink | Daily Tesla, SpaceX, Elon and Optimus news</title>
+<meta name="description" content="Every Tesla, SpaceX, Elon and Optimus headline. One free daily email.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Michroma&family=Orbitron:wght@500;700;900&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#0a0606;--bg2:#030202;--card:rgba(30,14,14,.6);--line:rgba(227,25,55,.22);--acc:#ffd400;--acc2:#e31937;--btn:linear-gradient(135deg,#e31937,#ff4b2b);--btnt:#fff;--txt:#eef2f7;--mut:#9aa6b8}
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{background:var(--bg);color:var(--txt);font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,sans-serif;-webkit-font-smoothing:antialiased}
+body{background:radial-gradient(1200px 600px at 80% -10%,rgba(227,25,55,.22),transparent 60%),linear-gradient(180deg,var(--bg) 0%,var(--bg2) 100%);min-height:100vh}
+body:before{content:"";position:fixed;inset:0;pointer-events:none;background-image:linear-gradient(rgba(255,255,255,.035) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.035) 1px,transparent 1px);background-size:40px 40px;mask-image:linear-gradient(180deg,#000,transparent 70%);-webkit-mask-image:linear-gradient(180deg,#000,transparent 70%)}
+.wrap{max-width:1180px;margin:0 auto;padding:0 18px;position:relative}
+nav{display:flex;align-items:center;justify-content:space-between;padding:16px 0}
+.brand{font-family:Michroma,Orbitron,sans-serif;font-size:13px;letter-spacing:3px;color:#fff}
+.brand b{color:var(--acc)}
+.pill{font-family:Orbitron,sans-serif;font-size:10px;letter-spacing:2px;font-weight:700;color:var(--acc);border:1px solid var(--line);padding:6px 10px;border-radius:999px;white-space:nowrap}
+.hero{border-radius:16px;overflow:hidden;border:1px solid var(--line);box-shadow:0 20px 60px rgba(0,0,0,.55),0 0 0 1px rgba(255,255,255,.02) inset,0 0 40px rgba(227,25,55,.22)}
+.hero img{display:block;width:100%;height:auto;aspect-ratio:3/1;object-fit:cover}
+.grid{display:grid;grid-template-columns:1fr;gap:28px;padding:28px 0 8px}
+.eyebrow{font-family:Orbitron,sans-serif;font-weight:700;font-size:11px;letter-spacing:3px;color:var(--acc);text-transform:uppercase;margin-bottom:12px}
+h1{font-family:Michroma,Orbitron,sans-serif;font-weight:400;font-size:24px;line-height:1.35;letter-spacing:.3px;color:#fff}
+h1 em{font-style:normal;color:var(--acc)}
+.sub{margin-top:14px;font-size:16px;line-height:1.6;color:var(--mut)}
+form{margin-top:22px;display:flex;flex-direction:column;gap:10px}
+input{width:100%;height:54px;border-radius:12px;border:1px solid var(--line);background:rgba(255,255,255,.04);color:#fff;font:500 16px Inter,sans-serif;padding:0 16px;outline:none}
+input::placeholder{color:#7d8899}
+input:focus{border-color:var(--acc);box-shadow:0 0 0 3px rgba(227,25,55,.22)}
+button{height:54px;border:0;border-radius:12px;background:var(--btn);color:var(--btnt);font:700 14px Orbitron,sans-serif;letter-spacing:2.5px;text-transform:uppercase;cursor:pointer;box-shadow:0 8px 28px rgba(227,25,55,.22)}
+.fine{font-size:12.5px;color:#7d8899;margin-top:10px}
+ul.ben{list-style:none;margin-top:26px;display:grid;gap:12px}
+ul.ben li{display:flex;gap:14px;align-items:flex-start;background:var(--card);border:1px solid var(--line);border-radius:12px;padding:14px}
+.ic{flex:0 0 34px;height:34px;border-radius:9px;display:grid;place-items:center;background:rgba(255,255,255,.04);border:1px solid var(--line);color:var(--acc);font:700 13px Orbitron,sans-serif}
+ul.ben b{display:block;font-weight:700;font-size:15px;color:#fff;margin-bottom:3px}
+ul.ben span{font-size:14px;line-height:1.5;color:var(--mut)}
+.prev{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:16px}
+.prev h3{font-family:Orbitron,sans-serif;font-size:11px;letter-spacing:3px;color:var(--acc);font-weight:700;margin-bottom:12px;display:flex;justify-content:space-between}
+.prev h3 i{font-style:normal;color:var(--mut);font-weight:500;letter-spacing:1.5px}
+.shot{position:relative;border-radius:12px;overflow:hidden;border:1px solid rgba(255,255,255,.08);max-height:520px}
+.shot img{display:block;width:100%;height:auto}
+.shot:after{content:"";position:absolute;left:0;right:0;bottom:0;height:120px;background:linear-gradient(180deg,transparent,var(--card))}
+.app{margin:26px 0 0;display:flex;flex-direction:column;gap:14px;align-items:flex-start;background:linear-gradient(135deg,var(--card),rgba(255,255,255,.02));border:1px solid var(--line);border-radius:16px;padding:20px}
+.app .t{font-family:Michroma,sans-serif;font-size:14px;color:#fff;letter-spacing:.5px}
+.app p{font-size:14px;color:var(--mut);line-height:1.55;margin-top:6px}
+.app a{color:var(--acc);font:700 12px Orbitron,sans-serif;letter-spacing:2px;text-decoration:none;border:1px solid var(--acc);padding:11px 16px;border-radius:10px;white-space:nowrap}
+.cta2{margin:26px 0 0;text-align:center;padding:28px 18px;border-radius:16px;border:1px solid var(--line);background:var(--card)}
+.cta2 h2{font-family:Michroma,sans-serif;font-weight:400;font-size:18px;color:#fff;line-height:1.4}
+.cta2 form{max-width:520px;margin:18px auto 0}
+.bh-form{width:100%;max-width:520px;margin:22px auto 0;display:flex;justify-content:center;align-items:center}
+.bh-form iframe{width:100%!important;max-width:100%;border:0}
+.cta2 .bh-form{margin:18px auto 0}
+footer{padding:30px 0 40px;text-align:center;font-size:12px;color:#6c778a;line-height:1.7}
+footer .brand{font-size:11px;display:block;margin-bottom:6px}
+
+@media(min-width:900px){
+ .wrap{padding:0 32px}
+ nav{padding:22px 0}
+ .grid{grid-template-columns:1.1fr .9fr;gap:48px;padding:44px 0 10px;align-items:start}
+ h1{font-size:36px}
+ .sub{font-size:18px}
+ form{flex-direction:row}
+ form input{flex:1}
+ form button{padding:0 28px;flex:0 0 auto}
+ ul.ben{grid-template-columns:1fr 1fr}
+ .prev{position:sticky;top:24px}
+ .app{flex-direction:row;align-items:center;justify-content:space-between;padding:22px 26px}
+ .cta2 h2{font-size:24px}
+}
+</style></head>
+<body><div class="wrap">
+<nav><div class="brand">KITCHEN <b>SINK</b></div><div class="pill">DAILY NEWS</div></nav>
+<div class="hero"><img src="https://iili.io/nM8YToQ.jpg" alt="Kitchen Sink News: red Tesla Roadster at sunset"></div>
+<div class="grid">
+ <div>
+  <div class="eyebrow">Free daily newsletter</div>
+  <h1>Every <em>Tesla</em>, <em>SpaceX</em>, <em>Elon</em> and <em>Optimus</em> headline. One daily email.</h1>
+  <p class="sub">Kitchen Sink rounds up everything Tesla, SpaceX, Elon and Optimus into one quick morning read, so you never miss a headline.</p>
+  <div class="bh-form"><script async src="https://subscribe-forms.beehiiv.com/v3/loader.js" data-beehiiv-form="1c855fd2-9642-4d1d-8e13-aa622c4295b5"></script></div>
+  <div class="fine">Free forever. One email each morning. Unsubscribe anytime.</div>
+  <ul class="ben">
+   <li><div class="ic">01</div><div><b>Daily briefing</b><span>The day's biggest stories, summarized in about 3 minutes.</span></div></li>
+   <li><div class="ic">02</div><div><b>TSLA and SPCX price box</b><span>Prior close and move for both, right at the top.</span></div></li>
+   <li><div class="ic">03</div><div><b>Curated X posts</b><span>The posts worth seeing, so you don't have to scroll for them.</span></div></li>
+   <li><div class="ic">04</div><div><b>100% free</b><span>No paywall, no upsell. Just the news.</span></div></li>
+  </ul>
+ </div>
+ <aside class="prev"><h3>SAMPLE ISSUE <i>DAILY</i></h3><div class="shot"><img src="https://iili.io/nM8Y5KP.jpg" alt="Sample Kitchen Sink issue with TSLA and SPCX price box"></div></aside>
+</div>
+<div class="app"><div><div class="t">Kitchen Sink app</div><p>Live headlines all day, between issues.</p></div><a href="https://brave-acorn-blue-birch.grok.me/">OPEN THE APP &rarr;</a></div>
+<div class="cta2"><h2>Get tomorrow's issue in your inbox.</h2><div class="bh-form"><script async src="https://subscribe-forms.beehiiv.com/v3/loader.js" data-beehiiv-form="1c855fd2-9642-4d1d-8e13-aa622c4295b5"></script></div></div>
+<footer><span class="brand">KITCHEN <b style="color:var(--acc)">SINK</b></span>Independent fan newsletter. Not affiliated with Tesla, SpaceX or xAI.<br>Nothing here is investment advice.</footer>
+</div><script type="text/javascript" async src="https://subscribe-forms.beehiiv.com/attribution.js"></script>
+</body></html>
